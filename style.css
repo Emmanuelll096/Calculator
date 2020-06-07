@@ -5,7 +5,7 @@
           box-sizing: border-box;
 }
 
-body {
+main {
   height: 100vh;
   width: 100vw;
   display: -webkit-box;
@@ -17,24 +17,28 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-main {
+main section {
   border: 1px solid #00ee;
   border-radius: 37px;
   padding: 2rem;
 }
 
-main input::-webkit-outer-spin-button,
-main input::-webkit-inner-spin-button {
+main section input::-webkit-outer-spin-button,
+main section input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
-main input[type="number"] {
+main section input[type="number"] {
   -moz-appearance: textfield;
 }
 
-main input {
+main section .calc-display {
   border: 1px solid #00ee;
   width: 320px;
   height: 60px;
@@ -43,7 +47,7 @@ main input {
   border-radius: 30px;
 }
 
-main .keys {
+main section .keys {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[4];
@@ -52,16 +56,31 @@ main .keys {
   margin-top: 20px;
 }
 
-main button {
-  background-color: #f1f3f4;
+main section input {
   width: 60px;
   height: 60px;
   border: none;
   border-radius: 30px;
   cursor: pointer;
+  background-color: white;
+  border: 1px solid #00ee;
 }
 
-main .op-key {
-  color: rgba(240, 56, 56, 0.933);
+main section .op-key {
+  color: red;
+}
+
+main p {
+  margin-bottom: 80px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 80px;
+  color: #494b4d;
+}
+
+main footer p {
+  margin-top: 50px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 20px;
+  color: #494b4d;
 }
 /*# sourceMappingURL=style.css.map */

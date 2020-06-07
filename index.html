@@ -1,37 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="style.css" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EJ's Calculator</title>
-  </head>
-  <body>
-   
-    <main>
-      <input type="number" value="0" />
+
+<head>
+  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EJ's Calculator</title>
+</head>
+
+<body>
+  <main>
+    <div>
+      <p>A Simple Calculator</p>
+    </div>
+    <!-- <section class="container">
+      <input type="text" class="calc-display" id="calc-show"/>
       <div class="keys">
-        <button class="op-key" op="clear">C</button>
-        <button class="op-key" op="negate">+/-</button>
-        <button class="op-key" op="percent">%</button>
-        <button class="op-key" op="divide">/</button>
-        <button class="num-key">7</button>
-        <button class="num-key">8</button>
-        <button class="num-key">9</button>
-        <button class="op-key" op="multiply">x</button>
-        <button class="num-key">4</button>
-        <button class="num-key">5</button>
-        <button class="num-key">6</button>
-        <button class="op-key" op="subtract">-</button>
-        <button class="num-key">1</button>
-        <button class="num-key">2</button>
-        <button class="num-key">3</button>
-        <button class="op-key" op="add">+</button>
-        <button class="nun-key">0</button>
-        <button class="nun-key">.</button>
-        <button class="equal-key">=</button>
+        <button class="clear-key" id="clear">C</button>
+        <button class="op-key" id="+/-">+/-</button>
+        <button class="op-key" id="%">%</button>
+        <button class="op-key" id="/">/</button>
+        <button class="num-key" id="7">7</button>
+        <button class="num-key" id="8">8</button>
+        <button class="num-key" id="9">9</button>
+        <button class="op-key" id="*">x</button>
+        <button class="num-key" id="4">4</button>
+        <button class="num-key" id="5">5</button>
+        <button class="num-key" id="6">6</button>
+        <button class="op-key" id="-">-</button>
+        <button class="num-key" id="1">1</button>
+        <button class="num-key" id="2">2</button>
+        <button class="num-key" id="3">3</button>
+        <button class="op-key" id="+">+</button>
+        <button class="num-key" id="0">0</button>
+        <button class="num-key">.</button>
+        <button class="equal-key" id="equal">=</button>
       </div>
-    </main>
-    <script src="./main.js"></script>
-  </body>
+    </section> -->
+    <section class="container">
+      <input type="text" class="calc-display" id="calc-show" readonly />
+      <div class="keys">
+        <input type="button" name="clear" value="C" onclick='deleteNumber()'>
+        <input type="button" name="delete" value="delete">
+        <input type="button" name="modulo" value="%" onclick='valueButton(this)'>
+        <input type="button" name="divide" value="/" onclick='valueButton(this)'>
+        <input type="button" name="num7" value="7" onclick='valueButton(this)'>
+        <input type="button" name="num8" value="8" onclick='valueButton(this)'>
+        <input type="button" name="num9" value="9" onclick='valueButton(this)'>
+        <input type="button" name="multiply" value="*" onclick='valueButton(this)'>
+        <input type="button" name="num4" value="4" onclick='valueButton(this)'>
+        <input type="button" name="num5" value="5" onclick='valueButton(this)'>
+        <input type="button" name="num6" value="6" onclick='valueButton(this)'>
+        <input type="button" name="substract" value="-" onclick='valueButton(this)'>
+        <input type="button" name="num1" value="1" onclick='valueButton(this)'>
+        <input type="button" name="num2" value="2" onclick='valueButton(this)'>
+        <input type="button" name="num3" value="3" onclick='valueButton(this)'>
+        <input type="button" name="add" value="+" onclick='valueButton(this)'>
+        <input type="button" name="num0" value="0" onclick='valueButton(this)'>
+        <input type="button" name="equal" value="=" onclick="calculate()">
+      </div>
+    </section>
+    <footer>
+      <p>Created by EJ &#128588; </p>
+    </footer>
+  </main>
+  <script src="./main.js"></script>
+</body>
+
 </html>
