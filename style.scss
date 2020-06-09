@@ -23,7 +23,7 @@ main {
     input[type="number"] {
       -moz-appearance: textfield;
     }
-    .calc-display{
+    .calc-display {
       border: 1px solid #00ee;
       width: 320px;
       height: 60px;
@@ -37,14 +37,14 @@ main {
       gap: 0.8rem;
       margin-top: 20px;
     }
-    input{
+    input {
       width: 60px;
       height: 60px;
       border: none;
       border-radius: 30px;
       cursor: pointer;
-        background-color: white;
-        border: 1px solid #00ee;
+      background-color: white;
+      border: 1px solid #00ee;
   
     }
     .op-key {
@@ -65,5 +65,8 @@ main {
       font-size: 20px;
       color: #494b4d;
     }
+  }
+  .calc-display{
+    font-size: 20px;
   }
 }
